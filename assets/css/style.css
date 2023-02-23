@@ -61,7 +61,8 @@ img{
 }
 /* main */
 .main-row{
-    /* overflow-y: auto; */
+    overflow-y: scroll;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -69,8 +70,8 @@ img{
 
 }
 .main-content{
-    width: calc(100% / 7 - 5px);
-position: relative;
+     width: calc(100% / 7 - 5px);
+     position: relative;
 }
  .main-card{
    
