@@ -9,10 +9,12 @@ html{
     color: #fff;
     font-family: Arial, sans-serif;
     font-size: 14px;
+    /* scroll-behavior: smooth; */
 }
 
 img{
     display: block;
+    width: 100%;
 }
 /* utility */
 .wrapper{
@@ -28,17 +30,44 @@ img{
     display: flex;
     justify-content: end;
 }
-
 .margin-header{
+    border-radius: 5px;
+}
+.margin-header,.main-pinco{
     margin-right: 10px;
     background-color:rgba(180, 180, 180, 0.4);
     padding: 5px 5px;
-    border-radius: 5px;
     
 }
+.margin-box{
+    margin: 20px 0;
+}
+
 /* fine-utility */
 
 /* header */
 .header{
     padding: 10px 0px;
 }
+/* main */
+
+.main-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.main-content{
+    width: calc(100% / 7 - 10px);
+}
+.main-card{
+    position: relative;
+}
+.main-pinco{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
