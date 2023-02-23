@@ -26,7 +26,7 @@ img{
 }
 
 .container{
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 .flex{
@@ -44,34 +44,40 @@ img{
 }
 .margin-box{
     margin: 20px 0;
+    
 }
 .flex{
     display: flex;
     align-items: center;
 
 }
+.icon{
+    padding-bottom: 10px;
+}
 /* fine-utility */
 
 /* header */
 .header{
     padding: 10px 0px;
+
 }
 /* main */
-#scroll{
-    overflow:auto;
-}
 .main-row{
+    /* overflow-y: auto; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
 
 }
 .main-content{
-    width: calc(100% / 7 - 10px);
+    width: calc(100% / 7 - 5px);
+position: relative;
 }
-.main-card{
-    position: relative;
+ .main-card{
+   
+
+    
 }
 .main-pinco{
     display: inline-block;
@@ -84,8 +90,11 @@ img{
 /* footer */
 
 .footer{
-    background-color: black;
-    padding: 20px 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222222;
+    /* padding: 0px 10px; */
 }
 .footer-row{
     justify-content: space-between;
@@ -103,4 +112,13 @@ img{
     background-color: rgba(180, 180, 180, 0.4);
     color: red;
     display: inline-block;
+
+}
+.footer-end span{
+    display: inline-block;
+    padding: 30px;
+}
+.space{
+    padding: 0 10px;
+    text-align: center;
 }
